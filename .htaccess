@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteCond $1 !^(index\.php|public|\.txt) 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1
+
+Options -Indexes
+
+<FilesMatch "\.(html|htm|php|js|xml|txt|css|jpg|png|gif|ico)$">
+Header set Cache-Control "max-age=604800, public, must-revalidate"
+</FilesMatch>

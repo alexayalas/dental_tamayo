@@ -1,0 +1,5 @@
+[06-Feb-2016 11:28:03 America/Chicago] PHP Fatal error:  Call to a member function mostrar() on a non-object in /home/creacion/public_html/test/application/controllers/administrador/Slider.php on line 30
+[06-Feb-2016 11:45:47 America/Chicago] PHP Fatal error:  Call to undefined method M_subcategoria::mostrar_por_categoria() in /home/creacion/public_html/test/application/controllers/Page.php on line 37
+[21-Feb-2016 12:04:23 America/Chicago] PHP Fatal error:  Call to a member function direccionar() on a non-object in /home/creacion/public_html/test/application/controllers/Page.php on line 91
+[21-Feb-2016 13:28:21 America/Chicago] PHP Fatal error:  Class 'M_contacto' not found in /home/creacion/public_html/test/system/core/Loader.php on line 305
+[21-Feb-2016 14:54:42 America/Lima] PHP Fatal error:  Class 'phpmailer' not found in /home/creacion/public_html/test/application/libraries/Sendmail.php on line 73
