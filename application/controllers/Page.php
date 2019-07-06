@@ -27,7 +27,7 @@ class Page extends CI_Controller {
          * Configuración personalizada
          */
         
-        $this->items['proyecto'] = 'Multident';
+        $this->items['proyecto'] = 'Dental Tamayo';
         $this->_session = $this->session_manager->datos_usuario('encuesta_data');
         $this->items['base_url'] = base_url();
 
