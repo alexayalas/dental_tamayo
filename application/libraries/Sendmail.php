@@ -10,7 +10,7 @@ class Sendmail {
         /*
          * Configuración para librerias, helpers y modelos
          */
-        $library = array('parser',);
+        $library = array('parser','email');
         $helper = array('url', 'form');
         $model = array();
         $this->ci->load->library($library);
@@ -161,5 +161,50 @@ class Sendmail {
             return $e->getMessage();
         }
     }
+
+    public function success_send_email($email){
+        $config = Array(
+            'protocol' => 'smtp',
+            //'smtp_host' => 'ssl://smtp.googlemail.com',
+            'smtp_host' => 'rajush.yarkan.net',
+            //'smtp_port' => 465,
+            'smtp_port' => 25,
+            //'smtp_user' => 'alejo.ayala.suncion@gmail.com',
+            'smtp_user' => 'noreply@multident.pe',
+            //'smtp_pass' => 'Alexis2016',
+            'smtp_pass' => 'Secreto_1234',
+            'mailtype' => 'html',
+            'charset' => 'utf-8',
+            'newline' => "\r\n"
+        ); 
+        $body = $this->ci->smarty_tpl->view('correo/'.$this->_view, $this->_items, TRUE);         
+        try {
+            $this->ci->email->initialize($config);              
+            //Ponemos la dirección de correo que enviará el email y un nombre
+            $this->ci->email->from($email['from']);                     
+            /*
+            * Ponemos el o los destinatarios para los que va el email
+            * en este caso al ser un formulario de contacto te lo enviarás a ti
+            * mismo
+            */
+            //$correos = array('alejo.ayala.suncion@gmail.com');
+            $this->ci->email->to($email['to']);   
+            //definimos los correo cc
+            //$this->email->cc($cc_email_dres);
+            //Definimos el asunto del mensaje
+            $this->ci->email->subject($email['subject']);                      
+            //Definimos el mensaje a enviar
+            $this->ci->email->message($body);   
+            //Definimos el archivo adjunto (no se le adjunta)
+            //$this->email->attach($dirPdf);                
+            //Enviamos el email y si se produce bien o mal que avise con una flasdata
+            $this->ci->email->send();
+            return TRUE;
+                                  
+        } catch (Exception $e) {
+            return $e->getMessage();
+        }
+    }
+    
     /*-------------FIN--------------*/
 }

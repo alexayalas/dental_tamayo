@@ -363,8 +363,19 @@ blockquote p {
 /*  Header styles
 /*------------------------------------------------------*/
 .header-top {
-  background-color: #60646d;
+  /*background-color: #60646d;*/
+  /*background-color: #00A5DC !important;*/
   padding: 11px 0;
+
+  background: rgba(0,164,219,1);
+  background: -moz-linear-gradient(left, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,164,219,1)), color-stop(33%, rgba(0,164,219,1)), color-stop(100%, rgba(5,209,255,1)));
+  background: -webkit-linear-gradient(left, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  background: linear-gradient(to right, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a4db', endColorstr='#05d1ff', GradientType=1 );  
+
 }
 .header-top p {
   color: #bbbfc9;
@@ -403,8 +414,17 @@ blockquote p {
   display: none;
 }
 #header {
-  padding: 30px 0;
-  background: #fff;
+  padding: 15px 0 22px 0;
+  /*background: #fff;*/
+  /*background: #00A5DC;*/
+  background: rgba(0,164,219,1);
+  background: -moz-linear-gradient(left, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,164,219,1)), color-stop(33%, rgba(0,164,219,1)), color-stop(100%, rgba(5,209,255,1)));
+  background: -webkit-linear-gradient(left, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  background: linear-gradient(to right, rgba(0,164,219,1) 0%, rgba(0,164,219,1) 33%, rgba(5,209,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a4db', endColorstr='#05d1ff', GradientType=1 );  
 }
 #header .logo {
   float: left;
@@ -420,7 +440,7 @@ blockquote p {
   margin-top: 7px;
 }
 nav.main-menu {
-  float: right;
+  /*float: right;*/
 }
 nav.main-menu ul {
   list-style: none;
@@ -437,8 +457,8 @@ nav.main-menu ul > li > a {
   display: block;
   padding: 8px 13px;
   text-decoration: none;
-  color: #60646d;
-  font-size: 15px;
+  color: #d7edf3;
+  font-size: 17px;
   font-weight: 400;
   text-align: left;
 }
@@ -464,9 +484,9 @@ nav.main-menu ul > li ul li a {
   color: #fff;
   padding: 10px 20px;
 }
-nav.main-menu ul > li ul li:hover a {
+/*nav.main-menu ul > li ul li:hover a {
   background-color: #53c3dd;
-}
+}*/
 nav.main-menu ul > li ul li ul {
   position: absolute;
   left: 190px;
@@ -474,8 +494,8 @@ nav.main-menu ul > li ul li ul {
 }
 nav.main-menu ul > li:hover > a,
 nav.main-menu ul > .current-menu-item > a {
-  background-color: #67c9e0;
-  color: #fff;
+  /*background-color: #67c9e0;*/
+  color: #000;
 }
 /*------------------------------------------------------*/
 /* Main Slider styles
@@ -527,11 +547,18 @@ nav.main-menu ul > .current-menu-item > a {
   color: #fff;
 }
 .home-slider .slide-content.display-bg {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(2, 208, 255, 0.6);
   padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+
 }
 .home-slider .slide-content.display-bg h1 {
   font-size: 42px;
+  color:#fff !important;
+}
+
+.home-slider .slide-content.display-bg p {
+  color:#fff !important;
 }
 .home-slider .appointment {
   position: absolute;
@@ -727,7 +754,7 @@ nav.main-menu ul > .current-menu-item > a {
   margin-bottom: 30px;
 }
 .home-features .features-intro .read-more {
-  background-color: #f15b5a;
+  background-color: #337ab7;
   color: #fff;
   padding: 15px 30px;
   text-transform: uppercase;
@@ -963,7 +990,7 @@ nav.main-menu ul > .current-menu-item > a {
 /*------------------------------------------------------*/
 #main-footer {
   background-color: #3a3c41;
-  padding: 100px 0 30px 0;
+  /*padding: 100px 0 30px 0;*/
   color: #9ba0aa;
   line-height: 24px;
 }
@@ -1039,9 +1066,10 @@ nav.main-menu ul > .current-menu-item > a {
 /* Footer Bottom
 /*------------------------------------------------------*/
 .footer-bottom {
-  margin-top: 60px;
-  border-top: 1px solid #4a4c52;
+  /*margin-top: 60px;
+  border-top: 1px solid #4a4c52;*/
   padding-top: 26px;
+  margin-bottom: 20px;
 }
 .footer-bottom p {
   color: #7a7d86;
@@ -2676,7 +2704,9 @@ table tbody tr {
 .btn-stre{
   border-radius: 20px;
   padding: 0px 15px 0px 15px;
-  margin-left: 15px;
+  margin:5px 10px 5px 10px !important;
+  float: right !important;
+  /*margin-left: 15px;*/
 }
 
 .btn-stre:hover{

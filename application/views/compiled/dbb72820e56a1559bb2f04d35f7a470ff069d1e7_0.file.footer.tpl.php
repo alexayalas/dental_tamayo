@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2019-07-05 08:19:42
+<?php /* Smarty version 3.1.27, created on 2019-07-26 05:34:39
          compiled from "C:\xampp5\htdocs\Tamayo\application\views\templates\web\structure\footer.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:297265d1f4e6e381f05_85749442%%*/
+/*%%SmartyHeaderCode:115735d3ad73fa07276_94105854%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dbb72820e56a1559bb2f04d35f7a470ff069d1e7' => 
     array (
       0 => 'C:\\xampp5\\htdocs\\Tamayo\\application\\views\\templates\\web\\structure\\footer.tpl',
-      1 => 1562189672,
+      1 => 1564137272,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '297265d1f4e6e381f05_85749442',
+  'nocache_hash' => '115735d3ad73fa07276_94105854',
   'variables' => 
   array (
     'base_url' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5d1f4e6e3a0481_36430877',
+  'unifunc' => 'content_5d3ad73fa803d1_90978176',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5d1f4e6e3a0481_36430877')) {
-function content_5d1f4e6e3a0481_36430877 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5d3ad73fa803d1_90978176')) {
+function content_5d3ad73fa803d1_90978176 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '297265d1f4e6e381f05_85749442';
+$_smarty_tpl->properties['nocache_hash'] = '115735d3ad73fa07276_94105854';
 ?>
 	<!-- JQUERY -->
         <?php echo '<script'; ?>
@@ -62,7 +62,7 @@ public/plugins/jqueryui/1.11.2/jquery-ui.js"><?php echo '</script'; ?>
         alert ("Ud esta abandonando este sitio, su sesion se finalizara");
         }
    
-<?php echo '</script'; ?>
+    <?php echo '</script'; ?>
 >
 
     <?php echo '<script'; ?>
@@ -113,10 +113,10 @@ public/plugins/datatable/js/dataTables.bootstrap.min.js"><?php echo '</script'; 
     <?php echo '</script'; ?>
 >
 
-    <?php echo '<script'; ?>
+    <!--<?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 public/plugins/jquery.inputmask/dist/jquery.inputmask.bundle.min.js"><?php echo '</script'; ?>
->
+>-->
 
     <?php echo '<script'; ?>
  src='<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
@@ -135,20 +135,20 @@ public/plugins/js/jquery.velocity.min.js'><?php echo '</script'; ?>
 public/plugins/js/custom.js?ver=1.0'><?php echo '</script'; ?>
 >  
 
-    <?php echo '<script'; ?>
+    <!--<?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 public/plugins/owl-carousel/owl.carousel.min.js"><?php echo '</script'; ?>
->
+>-->
     <?php echo '<script'; ?>
 >
-    $(document).ready(function() {
+    /*$(document).ready(function() {
         $(".owl-staff").owlCarousel({
             items: 3,
             itemsDesktop: [1199, 3],
             itemsDesktopSmall: [979, 3]
 
         });
-    });
+    });*/
     <?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
@@ -158,9 +158,9 @@ public/plugins/fancybox/js/fancybox/jquery.fancybox.js'><?php echo '</script'; ?
 
 	<?php echo '<script'; ?>
  type="text/javascript">
-        if($('#input-mask').length){
+        /*if($('#input-mask').length){
                 $(":input").inputmask();
-        }
+        }*/
     <?php echo '</script'; ?>
 > 
 
@@ -177,15 +177,15 @@ public/plugins/fancybox/js/fancybox/jquery.fancybox.js'><?php echo '</script'; ?
 	<?php echo '</script'; ?>
 > 
 
-    <?php echo '<script'; ?>
+    <!--<?php echo '<script'; ?>
  src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer><?php echo '</script'; ?>
->
+>-->
     <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 public/web/js/process.js?v=1.6"><?php echo '</script'; ?>
 >
 
-    <?php echo '<script'; ?>
+    <!--<?php echo '<script'; ?>
  type="text/javascript">
         
         var CaptchaCallback = function() {
@@ -194,7 +194,7 @@ public/web/js/process.js?v=1.6"><?php echo '</script'; ?>
         };
         
     <?php echo '</script'; ?>
->
+>-->
 
     <?php echo '<script'; ?>
  type="text/javascript">

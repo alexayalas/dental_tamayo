@@ -829,6 +829,15 @@ class Page extends CI_Controller {
         $this->parser->parse("mapa", $data);
     }
 
+    public function staff(){
+        $data['titulo_pagina'] = $this->items['proyecto'] . ' | Su Clínica Dental de Confianza';
+        $data['descripcion'] = '';
+
+        $data['active9'] = "current-menu-item";
+
+        $data = array_merge($data, $this->items);
+        $this->template->web("staff", $data);
+    }
 
     public function busqueda($filtro = '') {
         $data['titulo_pagina'] = 'Busqueda | ' . $this->items['proyecto'];

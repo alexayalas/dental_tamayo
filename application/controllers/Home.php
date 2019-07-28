@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 @session_cache_limiter('private, must-revalidate');
 @header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
@@ -24,9 +25,11 @@ class Home extends CI_Controller {
         /* Configuración personalizada */
 
         $this->items['base_url'] = base_url();
+        
     }
 
     public function index() {
+        //var_dump(base_url());
         redirect("site");
     }
 

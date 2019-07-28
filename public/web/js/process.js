@@ -3,6 +3,7 @@ $(document).on('submit', '.form', function() {
     btn = frm.find(".save");
     method = frm.attr("method");
     btn.attr("disabled", "disabled");
+    //console.log("funcion .....",btn);
     $('.load').html('cargando...<img src="'+base_url+'public/img/load2.gif" style="width: 30px">');
     $.ajax({
         url: frm.attr('action'),
@@ -15,12 +16,14 @@ $(document).on('submit', '.form', function() {
     })
             .done(function(data)
             {
+                console.log("done");
                 btn.removeAttr("disabled");
                 $('.load').html('');
                 frm.find('.response').html(data).hide().slideDown();
             })
             .error(function(data, msg)
             {
+                console.log("error");
                 btn.removeAttr("disabled");
                 frm.find('.response').html("Ha ocurrido un error interno");
             });
@@ -254,7 +257,7 @@ $(document).ready(function(){
 
 $(document).on('click', '.m-terminos', function (e) {
     e.preventDefault();
-    $("#modalTerminos").modal("show");
+    //$("#modalTerminos").modal("show");
 
 });
 

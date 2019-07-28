@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2019-07-05 15:15:08
+<?php /* Smarty version 3.1.27, created on 2019-07-24 17:58:45
          compiled from "C:\xampp5\htdocs\Tamayo\application\views\templates\web\view\especialidad.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:298835d1fafcce3c468_88419898%%*/
+/*%%SmartyHeaderCode:122725d38e2a5f21162_64311738%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,24 +9,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'efe7e1a51cabea618c15c237008d5a122265dee5' => 
     array (
       0 => 'C:\\xampp5\\htdocs\\Tamayo\\application\\views\\templates\\web\\view\\especialidad.tpl',
-      1 => 1562357670,
+      1 => 1564009120,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '298835d1fafcce3c468_88419898',
+  'nocache_hash' => '122725d38e2a5f21162_64311738',
   'variables' => 
   array (
     'base_url' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5d1fafccea2c72_82263590',
+  'unifunc' => 'content_5d38e2a62526b3_36791048',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5d1fafccea2c72_82263590')) {
-function content_5d1fafccea2c72_82263590 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5d38e2a62526b3_36791048')) {
+function content_5d38e2a62526b3_36791048 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '298835d1fafcce3c468_88419898';
+$_smarty_tpl->properties['nocache_hash'] = '122725d38e2a5f21162_64311738';
 ?>
 <div class="page-top clearfix">
     <div class="container">
@@ -56,72 +56,69 @@ site">Dental Tamayo</a><span class="divider"></span></li><li class="active">Espe
                             <div class="entry-content" itemprop="text">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <span class="h2 no-top-margin">No podrás dejar de sonreir</span><br><br>
-                                        <span style="font-size: 25px; font-weight: normal;">Contamos con todas las especialidades que tú y toda tu familia puede necesitar, protegiendo integralmente tú salud oral.</span>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <span class="h3">Estética Dental</span>
+                                        <span class="h3 h3-titulo-tamayo">Estética Dental</span>
                                         <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/especialidad/especialidad-estetica-dental.jpg" alt="" />
-                                        <p>Una sonrisa hermosa es una herramienta personal muy poderosa en nuestros días. Ya sea con un blanqueamiento dental o con carillas de porcelana, podemos ayudarlo o obtener una sonrisa que le abrirá muchas puertas.</p>
-                                        <p>La Odontología Estética también se encarga de reemplazar las antiguas curaciones de amalgama por restauraciones con resina.</p>
-                                        <strong>Blanqueamiento Dental: </strong><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/blanqueamiento-dental"> VER MÁS&#8230;</a><br />
-                                        <strong>Carillas de Porcelana: </strong> <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+public/imagen/especialidad/tratamiento_estetica_dental.jpg" alt="" />
+                                        <p>Los tratamientos dentales estéticos son los más solicitados en la actualidad. Otorgando al paciente esa sonrisa natural, ideal y armoniosa que desea.</p>
+                                        <strong>Diseño de sonrisa: </strong><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+site/diseno-de-sonrisa"> VER MÁS&#8230;</a><br />
+                                        <strong>Blanqueamiento dental: </strong> <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+site/blanqueamiento-dental"> VER MÁS&#8230;</a><br>
+                                        <strong>Carillas dentales: </strong> <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 site/carillas-de-porcelana"> VER MÁS&#8230;</a><br><br>
 
-                                        <span class="h3">Periodoncia</span><br />
+                                        <span class="h3 h3-titulo-tamayo">Periodoncia</span><br />
                                         <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/especialidad/periodoncia.jpg" alt="periodoncia" />
-                                        <p>La periodoncia abarca el diagnóstico y tratamiento de los problemas de los tejidos de soporte del diente, que son las encías y el hueso subyacente (gingivitis y enfermedad periodental)</p>
-                                        
-                                        <span class="h3">Rehabilitación Oral</span>
-                                        <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/especialidad/especialidad-rehabilitacion-oral.jpg"/>
-                                        <p>Es la rama de la Odontología que sea encarga de devolver la función y la estética principalmente en casos en los que se han perdido dientes, ya sea por caries o enfermedad periodental.</p>
-                                        <p>Los tratamientos incluyen las prótesis fijas (coronas, puentes) y removibles (dentaduras).</p>
-                                        <p>También atiende los problemas relacionados a las articulaciones temporomandibulares y el bruxismo.</p>
-                                        <strong>Rehabilitación Oral:</strong><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/coronas-dentales"> VER MÁS&#8230;</a><br>
-                                        <strong>Carillas de Porcelana: </strong> <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/carillas-de-porcelana"> VER MÁS&#8230;</a><br><br>
-                                        
-                                        <span class="h3">Implantes</span><br />
-                                        <img class="aligncenter size-full" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/especialidad/especialidad-implantes2.jpg" alt="" width="500" height="334" />
-                                        <p>La mejor alternativa para reemplazar piezas dentales perdidas es la colocación de implantes dentales. Mediante una intervanción simple y sin dolor es posible insertar estas raíces artificiales en el hueso remanente, para luego reconstruir la parte externa del diente, devolviendo la función y la estética.</p>
-                                        <p>Los implantes ofrecen como mayor ventaja la eliminación de la necesidad de desgastar los dientes vecinos como en el caso de los puentes fijos.</p>
+public/imagen/especialidad/tratamiento_periodoncia.jpg" alt="periodoncia" />
+                                        <p>Se dedica al cuidado de las encías y del los tejidos que soportan a los dientes. Si hablamos de estética tanto como salud, las encías son una parte fundamental. Más del 90% de las personas presentan gingivitis o inflamación de encías. </p>
                                         <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/implantes-dentales"><b> VER MÁS&#8230;</b></a>
+site/periodoncia"><b> VER MÁS&#8230;</b></a><br><br>
+                                        
+                                        <span class="h3 h3-titulo-tamayo">Rehabilitación Oral</span>
+                                        <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+public/imagen/especialidad/tratamiento_rehabilitacion_oral.jpg"/>
+                                        <p>Es la rama de la odontología que se encarga de delvolver la función y la estética. La principal causa de la pérdida de dientes es la caries dental. Esta enfermedad ocasionará que se debiliten las estructuras dentales siendo más probable que se fracturen y que finalmente no se puedan recuperar. </p>
+                                        <p>La segunda causa será la enfermedad de la encías, una colonización de microorganismos generará una pérdida de soporte de los dientes, aflojándolos y haciendo que finalmente se caigan.</p>
+                                        <strong>Coronas y puentes:</strong><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+site/coronas-y-puentes"> VER MÁS&#8230;</a><br>
                                     </div>
 
                                     <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <span class="h3">Endodoncia</span><br />
-                                        <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/especialidad/endodoncia-600x400.jpg" alt="Endodoncia"/>
-                                        <p>Cuando la parte viva interna del cliente ha sido infectada a causa de caries profundas, el tratamiento de endodoncia implica limpiar y sellas los conductos dentales para salvar la pieza afectada. Luego es posible reconstruir la porción externa del diente.</p>
                                         
-                                        <span class="h3">Ortodoncia</span><br />
-                                        <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/especialidad/ortodoncia-600x400.jpg" alt="ortodoncia"/>
-                                        <p>Esta especialidad tiene como fin el diagnóstico y tratamiento de las alteraciones de la posición de los dientes y/o huesos maxilares. Por lo general, el tratamiento implica la colocación de brackets y alambres delgados que tienen la función de alinear los dientes y ajustar la mordida de manera ideal. Pregunte también por el método Invasilgn y Ortodoncia Invisible (¡sin brackets!). <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/tratamiento-de-ortodoncia"><b> VER MÁS&#8230;</b></a></p>
-                                        
-                                        <span class="h3">Odontopediatría</span><br />
-                                        <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/especialidad/especialidad-odontopediatria1.jpg" alt=""/>
-                                        <p>Esta especialidad comprende el cuidado de los pacientes desde el vientre materno hasta el último año escolar. Su enfoque principal es la prevención, ya que con un asesoramiento adecuado podemos conseguir que los niños lleguen a la etapa adulta libres de caries (fluor, sellantes) y con los dientes alineados. Para el tratamiento de caries y otros problemas, las manos de los especialistas son los mejores para lograr una experiencia muy grata.</p>
-                                        
-                                        <span class="h3">Cirugía Oral</span><br />
+                                        <span class="h3 h3-titulo-tamayo">Implantes</span><br />
                                         <img class="aligncenter size-full" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/especialidad/especialidad-cirugia-oral.jpg"/>
-                                        <p>Las intervenciones quirúrgicas más comunes en Odontología son las extracciones dentales, ya sea aquellas piezas dañadas que no son viables para su reconstrucción, o en el caso de las terceras molares (muelas de juicio).</p>
+public/imagen/especialidad/tratamiento_implantes.jpg" alt="" width="500" height="334" />
+                                        <p>Los implantes son raíces dentales artificiales que permiten remplazar a dientes ausentes o perdidos. Estos implantes son dispositivos de titanio biocompatibles (es decir, aceptados por el cuerpo humano) colocados en el hueso del diente ausente donde se producirá una unión biológica del implante con el hueso. Luego, cuando el hueso y el implante están fuertemente unificados se procederá a confeccionar la  corona o diente protésico.</p>
+                                        <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+site/implantes-dentales"><b> VER MÁS&#8230;</b></a><br><br>
                                         
-                                        <span class="h3">Odontología Integral</span><br />
+                                        <span class="h3 h3-titulo-tamayo">Endodoncia</span><br />
+                                        <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+public/imagen/especialidad/tratamiento_endodoncia.jpg" alt="Endodoncia"/>
+                                        <p>O también llamada tratamiento de conductos, es el procedimiento que permite salvar el diente cuando este posee una infección o traumatismo que ya no puede ser restaurado con una simple curación dental. Se retira la porción dañada del diente, se realiza una limpieza de los conductos y se sella los mismos. En la mayoría de casos, al existir una amplia destrucción del diente, se requerirá de tratamientos adicionales como un perno y una corona para reconstruir la porción externa del mismo.</p>
+                                        
+                                        <span class="h3 h3-titulo-tamayo">Ortodoncia</span><br />
+                                        <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+public/imagen/especialidad/tratamiento_ortodoncia.jpg" alt="ortodoncia"/>
+                                        <p>Especialidad de la odontología dedicada a la corrección de los dientes y huesos que se encuentran torcidos o en mala posición permitiendo tener una boca sana y una sonrisa alineada.</p>
+                                        <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+site/ortodoncia"><b> VER MÁS&#8230;</b></a><br/><br/>
+
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        
+                                        <span class="h3 h3-titulo-tamayo">Odontología Infantil</span><br />
+                                        <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+public/imagen/especialidad/tratamiento_odontologia_infantil.jpg" alt=""/>
+                                        <p>La odontopediatría comprende el cuidado, mantenimiento y prevención de la salud dental desde la primera infancia hasta el ultimo año escolar. La primera visita al odontólogo deberá coincidir con la primera aparición de dientes a los 6 meses aproximadamente. Para nosotros en Dental Tamayo es de gran importancia la prevención y la detección temprana de defectos o lesiones tanto en los dientes como en los tejidos que los rodean: lengua, labios, encías, paladar, etc.</p>
+                                        <p>A través de técnicas dinámicas e innovadoras brindamos a los niños y a los padres el asesoramiento necesario y adecuado para desarrollar una Buena salud dental y con ello prevenir problemas futuros.</p>
+                                        
+                                        <span class="h3 h3-titulo-tamayo">Cirugía Oral</span><br />
                                         <img class="aligncenter size-full" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/especialidad/especialidad-odontologia-integral.jpg"/>
-                                        <p>Abarca los tratamientos más usuales de la Odontología, como destartrajes, profilaxis y restauraciones.</p><br />
+public/imagen/especialidad/tratamiento_cirugia.jpg"/>
+                                        <p>Los procedimientos quirúrgicos más frecuentes son las extracciones de dientes en mal estado y molares del juicio. Estas intervenciones son ambulatorias y siguiendo las indicaciones del especialista serán llevaderas y sencillas de tratar.</p>
+                                        
                                     </div>
                                 </div>
                             </div>

@@ -14,7 +14,7 @@
         alert ("Ud esta abandonando este sitio, su sesion se finalizara");
         }
    
-</script>
+    </script>
 
     <script src="{$base_url}public/plugins/datatable/js/jquery.dataTables.min.js"></script>
     <script src="{$base_url}public/plugins/datatable/js/dataTables.bootstrap.min.js"></script>
@@ -58,30 +58,30 @@
 
     </script>
 
-    <script src="{$base_url}public/plugins/jquery.inputmask/dist/jquery.inputmask.bundle.min.js"></script>
+    <!--<script src="{$base_url}public/plugins/jquery.inputmask/dist/jquery.inputmask.bundle.min.js"></script>-->
 
     <script src='{$base_url}public/plugins/js/jquery.flexslider-min.js'></script>
     <script  src='{$base_url}public/plugins/js/jquery.meanmenu.min.js'></script>
     <script src='{$base_url}public/plugins/js/jquery.velocity.min.js'></script>
     <script src='{$base_url}public/plugins/js/custom.js?ver=1.0'></script>  
 
-    <script src="{$base_url}public/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!--<script src="{$base_url}public/plugins/owl-carousel/owl.carousel.min.js"></script>-->
     <script>
-    $(document).ready(function() {
+    /*$(document).ready(function() {
         $(".owl-staff").owlCarousel({
             items: 3,
             itemsDesktop: [1199, 3],
             itemsDesktopSmall: [979, 3]
 
         });
-    });
+    });*/
     </script>
     <script src='{$base_url}public/plugins/fancybox/js/fancybox/jquery.fancybox.js'></script> 
 
 	<script type="text/javascript">
-        if($('#input-mask').length){
+        /*if($('#input-mask').length){
                 $(":input").inputmask();
-        }
+        }*/
     </script> 
 
 
@@ -95,17 +95,17 @@
 			});
 	</script> 
 
-    <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+    <!--<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>-->
     <script src="{$base_url}public/web/js/process.js?v=1.6"></script>
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         {literal}
         var CaptchaCallback = function() {
             /*grecaptcha.render('Recaptcha1', {'sitekey' : '6LeizisUAAAAAAlgxeditjer-NR21hAa4eQWBiT_'});*/
             grecaptcha.render('Recaptcha2', {'sitekey' : '6LeizisUAAAAAAlgxeditjer-NR21hAa4eQWBiT_'});
         };
         {/literal}
-    </script>
+    </script>-->
 
     <script type="text/javascript">
 

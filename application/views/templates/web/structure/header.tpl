@@ -41,7 +41,7 @@
         <link rel='stylesheet' href='{$base_url}public/plugins/google-map/css/mappress.css' type='text/css' media='all' />
         <link rel='stylesheet' href='{$base_url}public/plugins/fancy/source/jquery.fancybox.css' type='text/css' media='all' />
 
-       <link rel='stylesheet' href='{$base_url}public/plugins/fancybox/css/fancybox/jquery.fancybox-buttons' type='text/css' media='all' />
+       <link rel='stylesheet' href='{$base_url}public/plugins/fancybox/css/fancybox/jquery.fancybox-buttons.css' type='text/css' media='all' />
         <link rel='stylesheet' href='{$base_url}public/plugins/fancybox/css/fancybox/jquery.fancybox-thumbs.css' type='text/css' media='all' />
         <link rel='stylesheet' href='{$base_url}public/plugins/fancybox/css/fancybox/jquery.fancybox.css' type='text/css' media='all' />
 		

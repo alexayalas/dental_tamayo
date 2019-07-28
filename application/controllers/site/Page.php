@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 @session_cache_limiter('private, must-revalidate');
 @header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
@@ -82,11 +83,11 @@ class Page extends CI_Controller {
         $data['titulo_pagina'] = $this->items['proyecto'] . ' | Su Clínica Dental de Confianza';
         $data['descripcion'] = '';
 
-        $data['active1'] = "current-menu-item";
+        $data['active9'] = "current-menu-item";
 
 
         $data = array_merge($data, $this->items);
-        $this->template->web("staff", $data);
+        $this->template->web_2("staff", $data);
     }
 
     
@@ -138,6 +139,75 @@ class Page extends CI_Controller {
         
     }
 
+    public function convenios($url = ''){        
+        if($url == ''){
+            $convenios = $this->m_convenio->mostrar_activos(FALSE,FALSE, ["c.posicion" => "asc"]);
+            if(!empty($convenios)){
+                $i = 1;
+                foreach ($convenios as $item) {
+                    $data['convenio'][] = [
+                        'numero' => $i,
+                        'nombre' => $item['nombre'],
+                        'imagen' => $item['imagen']
+                    ];
+                $i++;
+                }
+            }
+            $data['active3'] = "current-menu-item";
+            $data['titulo_pagina'] = 'Convenios | ' . $this->items['proyecto'];
+            $data['descripcion'] = '';
+            $data = array_merge($data, $this->items);
+            $this->template->web_2("convenio", $data);         
+        }        
+    }
+
+    public function contactenos($url = ''){   
+        if($url == ''){             
+            $data['active5'] = "current-menu-item";
+            $data['titulo_pagina'] = 'Contáctenos | ' . $this->items['proyecto'];
+            $data['descripcion'] = '';
+
+            if(isset($_SERVER['HTTP_REFERER'])){
+                $query = $_SERVER['QUERY_STRING'];
+                if(!empty($query)){
+                    $uri = $_SERVER['HTTP_REFERER'] . '?'. $query; 
+                }else{
+                   $uri = $_SERVER['HTTP_REFERER']; 
+                }
+                
+            }else{
+                $uri = 'sin procedencia';
+            }
+        //var_dump($uri);
+
+        $query = $_SERVER['QUERY_STRING'];
+        if($query != ''){
+            $adword = strpos($query, 'gclid=');
+            if($adword !== FALSE){
+                $re = '2';
+            }
+        }
+
+        $idsede = $this->input->get("sede");
+        $idorigen = $this->input->get("form");
+        $finalOrigen = '1';
+
+        if(isset($idorigen) && $idorigen != ''){
+            $tmpOrigen = $this->m_origen_formulario->mostrar(array('of.url' => $idorigen));
+            if(!empty($tmpOrigen)){
+                $finalOrigen = $tmpOrigen['idorigenform'];
+            }else{
+                echo $this->url_comp->direccionar(base_url(), TRUE);
+                EXIT;
+            }
+        }
+
+        $data['uri'] = base64_encode($uri);
+        $data['origen'] = $finalOrigen;
+        $data = array_merge($data, $this->items);
+        $this->template->web_2("contactenos", $data); 
+        }                      
+    }    
 
     public function servicios($url = ''){
         if($url == 'especialidades'){
@@ -624,6 +694,38 @@ class Page extends CI_Controller {
         $data = array_merge($data, $this->items);
         $this->template->web_2("carillas_porcelana", $data);
     }
+
+    public function diseno_de_la_sonrisa(){
+        $data['titulo_pagina'] = 'Diseño de la Sonrisa | ' . $this->items['proyecto'];
+        $data['descripcion'] = '';
+
+        $data = array_merge($data, $this->items);
+        $this->template->web_2("diseno_de_la_sonrisa", $data);
+    }
+
+    public function periodoncia(){
+        $data['titulo_pagina'] = 'Periodoncia | ' . $this->items['proyecto'];
+        $data['descripcion'] = '';
+
+        $data = array_merge($data, $this->items);
+        $this->template->web_2("periodoncia", $data);
+    }
+
+    public function coronas_y_puentes(){
+        $data['titulo_pagina'] = 'Coronas y Puentes | ' . $this->items['proyecto'];
+        $data['descripcion'] = '';
+
+        $data = array_merge($data, $this->items);
+        $this->template->web_2("coronas_y_puentes", $data);
+    }   
+    
+    public function ortodoncia(){
+        $data['titulo_pagina'] = 'Ortodoncia | ' . $this->items['proyecto'];
+        $data['descripcion'] = '';
+
+        $data = array_merge($data, $this->items);
+        $this->template->web_2("ortodoncia", $data);
+    }     
 
     public function coronas_dentales(){
         $data['titulo_pagina'] = 'Coronas Dentales | ' . $this->items['proyecto'];

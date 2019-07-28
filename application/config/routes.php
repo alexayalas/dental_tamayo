@@ -61,9 +61,6 @@ $route['admin/(:any)'] = 'admin/$1';
 $route['admin/home'] = 'admin/home';
 $route['admin'] = 'admin/home/login';
 
-
-
-
 $route['site'] = 'site/page/home';
 $route['site/(:any)'] = 'site/page/$1';
 $route['site/(:any)/(:any)'] = 'site/page/$1/$2';
@@ -84,16 +81,10 @@ $route['site/coronas-dentales'] = 'site/page/coronas_dentales';
 $route['site/implantes-dentales'] = 'site/page/implantes_dentales';
 $route['site/tratamiento-de-ortodoncia'] = 'site/page/tratamiento_ortodoncia';
 $route['site/politicas-privacidad'] = 'site/page/politicas_privacidad';
-
-
-
-
-
-
-/*$route['(:any)'] = 'page/$1';
-$route['(:any)/(:any)'] = 'page/$1/$2';
-$route['(:any)/(:any)/(:any)'] = 'page/$1/$2/$3';
-$route['(:any)/(:any)/(:any)/(:any)'] = 'page/$1/$2/$3/$4';*/
+$route['site/diseno-de-sonrisa'] = 'site/page/diseno_de_la_sonrisa';
+$route['site/periodoncia'] = 'site/page/periodoncia';
+$route['site/coronas-y-puentes'] = 'site/page/coronas_y_puentes';
+$route['site/ortodoncia'] = 'site/page/ortodoncia';
 
 $route['404_override'] = 'error404';
 $route['translate_uri_dashes'] = FALSE;

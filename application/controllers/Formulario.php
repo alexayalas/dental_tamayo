@@ -16,7 +16,7 @@ class Formulario extends CI_Controller {
         /*
          * Configuración para librerias, helpers y modelos
          */
-        $library = array('parser','sendmail','session_manager');
+        $library = array('parser','sendmail','session_manager','email');
         $helper = array('url', 'captcha_helper', 'string_helper');
         $model = array('m_suscriptor', 'm_formulario_web', 'm_sede', 'm_sede_correo', 'm_especialidad', 'm_referencia', 'm_semefa', 'm_personal', 'm_control', 'm_formulario_helpingdent', 'm_plan_dental', 'm_coctel', 'm_congreso');
         $this->load->library($library);
@@ -108,7 +108,7 @@ class Formulario extends CI_Controller {
         $telefono = $this->input->post('telefono');
         $referencia = $this->input->post('referencia');
         $especialidad = $this->input->post('especialidad');
-        $sede = $this->input->post('sede');
+        //$sede = $this->input->post('sede');
         $fecha = $this->input->post('fecha');
         $hora = $this->input->post('hora');
         $comentario = $this->input->post('comentario');
@@ -116,7 +116,7 @@ class Formulario extends CI_Controller {
 		$uri = $this->input->post('uri');
 		$u = base64_decode($this->input->post('u'));
 		$terminos = $this->input->post('terminos');
-		$captcha = $this->input->post('g-recaptcha-response');
+		//$captcha = $this->input->post('g-recaptcha-response');
         //var_dump($this->correoPrincipal['valor']); exit;
 
         //VALIDACION DE CAMPOS
@@ -126,10 +126,10 @@ class Formulario extends CI_Controller {
         $error .= $this->mantenimiento->validacion($telefono, 'required|maxlenght[9]', 'Telefono o Celular');
         $error .= $this->mantenimiento->validacion($referencia, 'required|numeric', 'Como se entero');
         $error .= $this->mantenimiento->validacion($especialidad, 'required|numeric', 'Seleccione una especialidad');
-        $error .= $this->mantenimiento->validacion($sede, 'required|numeric', 'Seleccione una sede');
+        //$error .= $this->mantenimiento->validacion($sede, 'required|numeric', 'Seleccione una sede');
         $error .= $this->mantenimiento->validacion($fecha, 'required|date', 'Fecha');
         $error .= $this->mantenimiento->validacion($hora, 'required', 'Hora');
-		$error .= $this->mantenimiento->validacion($captcha, 'required', 'verificar captcha');
+		//$error .= $this->mantenimiento->validacion($captcha, 'required', 'verificar captcha');
 
         if ($error != '') {
             echo $this->alerta->swal_error($error);
@@ -142,23 +142,6 @@ class Formulario extends CI_Controller {
             EXIT;
         }
 		
-		if(isset($captcha) && !empty($captcha)){
-            $secret = '6LeizisUAAAAAFJCIoexHQUXQcTm6kzQvYswyJQS';
-            $ip = $this->input->ip_address();
-            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$captcha&remoteip=$ip";
-            $result = file_get_contents($url);
-
-            $_var = json_decode($result, TRUE);
-
-            if($_var['success'] == FALSE){
-                $msg = 'validación incorrecta';
-                echo $this->alerta->reset_form();
-                echo $this->alerta->swal_error($msg);
-                EXIT;
-            }
-            //var_dump($_var); exit;
-        }
-
         $newFecha = $fecha .' '. $hora;
 
         $datos['nombre'] = $nombre;
@@ -167,7 +150,7 @@ class Formulario extends CI_Controller {
         $datos['idreferencia'] = $referencia;
         $datos['idespecialidad'] = $especialidad;
 		$datos['url'] = $uri;
-        $datos['idsede'] = $sede;
+        //$datos['idsede'] = $sede;
         $datos['idorigen'] = $origen;
         $datos['fecha_cita'] = date("Y-m-d H:i:s", strtotime($newFecha));
         $datos['fecha_registro'] = date("Y-m-d H:i:s");
@@ -178,60 +161,27 @@ class Formulario extends CI_Controller {
         $result = $this->m_formulario_web->insertar($datos);
         
         if($result !== FALSE){
-            $tmpSede = $this->m_sede->mostrar(array('s.idsede' => $sede));
+            //$tmpSede = $this->m_sede->mostrar(array('s.idsede' => $sede));
             $tmpEspecialidad = $this->m_especialidad->mostrar(array('e.idespecialidad' => $especialidad));
             $tmpReferencia = $this->m_referencia->mostrar(array('r.idreferencia' => $referencia));
 			
 			$newHora = str_replace(':', '', $hora);
-
+        
             $data = array(
-                    'name' => $nombre,
-                    'email' => $email,
-                    'subject' => 'Solicitud de Cita desde la web',
-                    /* Datos SMTP: en caso se necesiten */
-                    'smtp_secure' => '', // ssl - tls
-                    'smtp_host' => 'mail.multident.pe',
-                    'smtp_port' => 25, // ssl: 465 - tls: 587
-                    'smtp_username' => 'informacion@multident.pe',
-                    'smtp_password' => 'Secreto_1234',
-                    /* Datos adicionales */
-                    'nombre' => $nombre,
-                    'correo' => $email,
-                    'telefono' => $telefono,
-                    'comentario' => $comentario,
-                    'sede' => $tmpSede['nombre'],
-					'direccion' => $tmpSede['direccion'],
-                    'referencia' => $tmpReferencia['nombre'] ,
-                    'especialidad' => $tmpEspecialidad['nombre'] ,
-                    'fecha' => $newFecha
-            );
-            /* ------MAIL DE ATERRIZAJE------- */
-            $list_email = array(
-                'name' => $this->correoPrincipal['valor'],
-            );
-            $list_email2 = array();
-
-            if($tmpSede['directo'] == '1'){
-                $correos = $this->m_sede_correo->mostrar_cuando(array('sc.idsede' => $sede));
-                if(!empty($correos)){
-                    $v = 1;
-                    foreach ($correos as $item) {
-                        $list_email2['name'.$v] = $item['correo'];
-                        $v++;
-                    }
-                }
-				
-				$urlApi = 'http://multident.pe/callcenter/ci.php/api/registro?key=c275b7779ed98fbb782b965f0b48b4df&paciente='.urlencode($nombre).'&correo='.urlencode($email).'&celular='.urlencode($telefono).'&sede='.$tmpSede['codigo'].'&captacion='.urlencode($tmpReferencia['nombre']).'&especialidad='.urlencode($tmpEspecialidad['nombre']).'&fecha='.$fecha.'&hora='.$newHora.'&comentario='.urlencode($comentario);
-                $api = file_get_contents($urlApi);
-
-            }
+                'from' => $email,
+                'to' => $this->correoPrincipal['valor'],
+                'subject' => 'Solicitud de Cita desde la web',
+                'nombre' => $nombre,
+                'correo' => $email,
+                'telefono' => $telefono,
+                'comentario' => $comentario,
+                'referencia' => $tmpReferencia['nombre'] ,
+                'especialidad' => $tmpEspecialidad['nombre'] ,
+                'fecha' => $newFecha
+            );   
             
-            $final = array_merge($list_email, $list_email2);
-            
-
             $this->sendmail->load($data, 'solicitud_cita');
-            $this->sendmail->success_sendmail2($final);
-
+            $this->sendmail->success_send_email($data);
             
             echo $this->alerta->swal_success('Se registro su solicitud de cita, en breve nos  estaremos comunicando contigo para confirmar la fecha y hora de la cita...');
             echo $this->url_comp->actualizar_tiempo('4000');  
@@ -367,7 +317,79 @@ class Formulario extends CI_Controller {
 
     }
 	
-	
+    public function accion_consulta() {
+        $nombre = $this->input->post('nombre');
+        $email = $this->input->post('email');
+        $asunto = $this->input->post('asunto');
+        $mensaje = $this->input->post('mensaje');
+        $origen = $this->input->post('origen');
+		$uri = $this->input->post('uri');
+		$u = base64_decode($this->input->post('u'));
+		$terminos = $this->input->post('terminos');        
+
+        //VALIDACION DE CAMPOS
+        $error = '';
+        $error .= $this->mantenimiento->validacion($nombre, 'required|alphaspecial', 'Nombres y Apellidos');
+        $error .= $this->mantenimiento->validacion($email, 'required|email', 'E-mail');
+        $error .= $this->mantenimiento->validacion($asunto, 'required|alphaspecial', 'Asunto');
+        $error .= $this->mantenimiento->validacion($mensaje, 'required|alphaspecial', 'Mensaje');        
+
+        if ($error != '') {
+            echo $this->alerta->swal_error($error);
+            EXIT;
+        }
+		
+		if(!isset($terminos)){
+            $ms= 'Debe de aceptar las condiciones';
+            echo $this->alerta->swal_error($ms);
+            EXIT;
+        }
+
+        $datos['nombre'] = $nombre;
+        $datos['email'] = $email;
+		$datos['url'] = $uri;
+        //$datos['idsede'] = $sede;
+        $datos['idorigen'] = $origen;
+        //$datos['fecha_cita'] = date("Y-m-d H:i:s", strtotime($newFecha));
+        $datos['fecha_registro'] = date("Y-m-d H:i:s");
+        $datos['comentario'] = $asunto.' '.$mensaje;
+		$datos['link_procedencia'] = $u;
+        $datos['ip'] = $this->input->ip_address();
+
+        $result = $this->m_formulario_web->insertar($datos);
+        
+        if($result !== FALSE){
+            //$tmpSede = $this->m_sede->mostrar(array('s.idsede' => $sede));
+            //$tmpEspecialidad = $this->m_especialidad->mostrar(array('e.idespecialidad' => $especialidad));
+            //$tmpReferencia = $this->m_referencia->mostrar(array('r.idreferencia' => $referencia));
+			
+			//$newHora = str_replace(':', '', $hora);
+        
+            $data = array(
+                'from' => $email,
+                'to' => $this->correoPrincipal['valor'],
+                'subject' => 'Envio de Consulta desde la web',
+                'nombre' => $nombre,
+                'correo' => $email,
+                'asunto' => $asunto,
+                'mensaje' => $mensaje,
+                'fecha' => date("Y-m-d H:i:s")
+            );   
+            
+            $this->sendmail->load($data, 'consulta_contactenos');
+            $this->sendmail->success_send_email($data);
+            
+            echo $this->alerta->swal_success('Se registro su consulta en nuestra web, en breve nos estaremos comunicando contigo para atender tu consulta.');
+            echo $this->url_comp->actualizar_tiempo('4000');  
+            EXIT;
+        
+
+        }else{
+            echo $this->alerta->swal_error('Hubo Problemas Internos...', TRUE);
+            EXIT;  
+        }
+
+    }	
 
     public function accion_especialidad() {
         $nombre = $this->input->post('nombre');

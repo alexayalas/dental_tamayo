@@ -2,99 +2,19 @@
     <div class="container">
         <div class="row">
 
-            <div class=" col-lg-3 col-md-3 col-sm-6  ">
-                <section id="text-2" class="widget animated fadeInLeft widget_text"><h3 class="title">Accesos Directos</h3>
-                    <div class="textwidget">
-                        <ul>
-                            <li><img src="{$base_url}public/imagen/extras/arrow-list-two-bg02.png">&nbsp;&nbsp;&nbsp;<a href="{$base_url}site/promociones/">Promociones</a></li>
-                            <li><img src="{$base_url}public/imagen/extras/arrow-list-two-bg02.png">&nbsp;&nbsp;&nbsp;<a href="{$base_url}site/servicios/emergencias/">Emergencias 24/7</a></li>
-                            <li><img src="{$base_url}public/imagen/extras/arrow-list-two-bg02.png">&nbsp;&nbsp;&nbsp;<a href="{$base_url}site/politicas-privacidad/">Politicas de Privacidad</a></li>
-                        </ul>
-                    </div>
-                </section>            
-            </div>
-
-            <div class=" col-lg-3 col-md-3 col-sm-6  ">
-                <section id="categories-4" class="widget animated fadeInLeft widget_categories">
-                    <h3 class="title">Tags más visitados</h3>    
-                    {if isset($lista_tag)}
-                        <ul class="gropu-cust">
-                            {foreach $lista_tag as $tg}
-                                <li><a href="{$base_url}site/tag/{$tg['url']}" class="btn boton-1gstag"><span class="fa fa-tag"></span> {$tg['nombre']}</a></li>
-                            {/foreach}
-                        </ul>  
-                    {/if}
-                </section>            
-            </div>
-
-            <div class="clearfix visible-sm"></div>
-
-            <div class=" col-lg-3 col-md-3 col-sm-6  ">
-                <section id="wp_email_capture_widget_class-3" class="widget animated fadeInLeft widget_wp_email_capture_widget_class">
-                <h3 class="title">¡Suscríbete a Multident News!</h3>
-                <div class="textwidget">
-                    <p>Ofertas únicas en tu correo y noticias de gran interés </p>
-                </div> 
-                <div id="wp_email_capture" class="wp-email-capture wp-email-capture-widget wp-email-capture-widget-worldwide">
-                    <form name="wp_email_capture" method="post" action="{$base_url}formulario/suscripcion" class="form">
-                        <span class="response"></span>
-                        
-                        <label class="">Nombre:</label> 
-                        <input name="nombre" type="text" class="" title="Nombre" /><br/>
-
-                        <label class="">E-mail:</label> 
-                        <input name="email" type="text" class="" title="Email" /><br/>
-
-                        <input type="hidden" name="wp_capture_action" value="1" />
-                        
-                        <label style="font-size: 14px;">
-                            <input type="checkbox" value="1" name="terminos"> He leído, entendido y acepto los términos y condiciones de sus <a href="#" class="m-terminos"> <u>Políticas de Privacidad. </u></a>
-                        </label>
-
-                            <!-- <div class="g-recaptcha" id="Recaptcha2"></div> -->
-                        
-
-                        <button class="btn btn-social btn-primary save btn-suscribir" data-toggle="tooltip" title="Enviar">
-                        <i class="fa fa-paper-plane"></i> Enviar</button><i class="load"></i>
-
-                    </form>
-
-                </div>
-
-                </section>            
-            </div>
-
-            <div class=" col-lg-3 col-md-3 col-sm-6  ">
-                <section id="text-4" class="widget animated fadeInLeft widget_text">            
-                    <div class="textwidget">
-                        <center>
-                            <a href="http://www.facebook.com/multidentperu" target="_blank"><img src="{$base_url}public/imagen/extras/facebook.png"></a>  
-                            <a href="http://www.youtube.com/elcanaldelasonrisa" target="_blank"><img src="{$base_url}public/imagen/extras/youtube.png"></a>
-                        </center>
-                    </div>
-                </section>
-                <section id="text-3" class="widget animated fadeInLeft widget_text">          
-                    <div class="textwidget">
-                        <center>
-                            <img width="70%" src="{$base_url}public/imagen/extras/marcaPeru.png">
-                        </center>
-                    </div>
-                </section>            
-            </div>
-
             <div class="col-lg-12 col-md-12 col-sm-12 ">
                 <div class="footer-bottom animated fadeInDown clearfix">
                     <div class="row">
                         <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
-                            <p>© 2016 Copyright - Todos los Derechos Reservados  <a href="{$base_url}site/">DENTAL TAMAYO</a></p>
+                            <p>© 2019 Copyright - Todos los Derechos Reservados  <a href="{$base_url}site/">DESARROLLO IT</a></p>
                         </div>
                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12  clearfix">
                             <ul class="footer-social-nav">
                                 <li>
-                                    <a target="_blank" href="http://www.facebook.com/multidentperu"><i class="fa fa-facebook"></i></a>
+                                    <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="http://www.youtube.com/elcanaldelasonrisa"><i class="fa fa-youtube"></i></a>
+                                    <a target="_blank" href="#"><i class="fa fa-youtube"></i></a>
                                 </li>                                
                             </ul>
                         </div>

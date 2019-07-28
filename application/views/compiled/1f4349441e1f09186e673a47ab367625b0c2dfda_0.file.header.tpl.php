@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2019-07-05 08:19:42
+<?php /* Smarty version 3.1.27, created on 2019-07-26 05:31:47
          compiled from "C:\xampp5\htdocs\Tamayo\application\views\templates\web\structure\header.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:237625d1f4e6e0a1c04_20456123%%*/
+/*%%SmartyHeaderCode:166895d3ad693661c69_99625345%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1f4349441e1f09186e673a47ab367625b0c2dfda' => 
     array (
       0 => 'C:\\xampp5\\htdocs\\Tamayo\\application\\views\\templates\\web\\structure\\header.tpl',
-      1 => 1562189671,
+      1 => 1564136950,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '237625d1f4e6e0a1c04_20456123',
+  'nocache_hash' => '166895d3ad693661c69_99625345',
   'variables' => 
   array (
     'titulo_pagina' => 0,
@@ -26,13 +26,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5d1f4e6e1cc459_00666762',
+  'unifunc' => 'content_5d3ad6936ed4e8_59494355',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5d1f4e6e1cc459_00666762')) {
-function content_5d1f4e6e1cc459_00666762 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5d3ad6936ed4e8_59494355')) {
+function content_5d3ad6936ed4e8_59494355 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '237625d1f4e6e0a1c04_20456123';
+$_smarty_tpl->properties['nocache_hash'] = '166895d3ad693661c69_99625345';
 ?>
 <!DOCTYPE html>
 <!--[if IE 7]><html class="ie ie7" lang="es-ES"><![endif]-->
@@ -98,7 +98,7 @@ public/plugins/google-map/css/mappress.css' type='text/css' media='all' />
 public/plugins/fancy/source/jquery.fancybox.css' type='text/css' media='all' />
 
        <link rel='stylesheet' href='<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/plugins/fancybox/css/fancybox/jquery.fancybox-buttons' type='text/css' media='all' />
+public/plugins/fancybox/css/fancybox/jquery.fancybox-buttons.css' type='text/css' media='all' />
         <link rel='stylesheet' href='<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 public/plugins/fancybox/css/fancybox/jquery.fancybox-thumbs.css' type='text/css' media='all' />
         <link rel='stylesheet' href='<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>

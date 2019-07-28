@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2019-07-05 15:20:38
+<?php /* Smarty version 3.1.27, created on 2019-07-24 16:13:53
          compiled from "C:\xampp5\htdocs\Tamayo\application\views\templates\web\view\nosotros.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:217925d1fb1168941b1_33693238%%*/
+/*%%SmartyHeaderCode:255865d38ca11666875_26117422%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,24 +9,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e0053f1e7d34a2a6ebe80fff7569eaebbe027c50' => 
     array (
       0 => 'C:\\xampp5\\htdocs\\Tamayo\\application\\views\\templates\\web\\view\\nosotros.tpl',
-      1 => 1562189689,
+      1 => 1564002830,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '217925d1fb1168941b1_33693238',
+  'nocache_hash' => '255865d38ca11666875_26117422',
   'variables' => 
   array (
     'base_url' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5d1fb116902025_07279564',
+  'unifunc' => 'content_5d38ca116c28d1_12657863',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5d1fb116902025_07279564')) {
-function content_5d1fb116902025_07279564 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5d38ca116c28d1_12657863')) {
+function content_5d38ca116c28d1_12657863 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '217925d1fb1168941b1_33693238';
+$_smarty_tpl->properties['nocache_hash'] = '255865d38ca11666875_26117422';
 ?>
 
 <div class="page-top clearfix">
@@ -37,7 +37,7 @@ $_smarty_tpl->properties['nocache_hash'] = '217925d1fb1168941b1_33693238';
                 <nav class="bread-crumb">
                     <ul class="breadcrumb clearfix">
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site">Multident</a><span class="divider"></span></li><li class="active">Nosotros</li>
+site">Dental Tamayo</a><span class="divider"></span></li><li class="active">Nosotros</li>
                     </ul>                
                 </nav>
             </div>
@@ -57,34 +57,23 @@ site">Multident</a><span class="divider"></span></li><li class="active">Nosotros
                             <div class="entry-content" itemprop="text">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <span style="font-size: 25px;">Gracias a la confianza de miles de pacientes y al reconocimiento de las más importantes entidades del medio, hoy Multident es la clínica líder del Perú.
+                                        <!--<span style="font-size: 25px;">Gracias a la confianza de miles de pacientes y al reconocimiento de las más importantes entidades del medio, hoy Multident es la clínica líder del Perú.
                                         </span>
                                         <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 public/imagen/extras/recepcion-familia.jpg">
                                             <img class="aligncenter" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 public/imagen/extras/recepcion-familia.jpg" alt="" />
-                                        </a>
-                                        <h2 class="h2">Historia</h2>
-                                        <p>En 1969, el Dr. Edgardo Ochoa instaló un consultorio dental en el distrito de Chorrillos. Su hijo, el Dr. Jesús Ochoa, se unió a él 10 años más tarde. Juntos comenzaron el proyecto de implementar un sistema de atención dental diferente al de los que existían en aquella época, incorporando los últimos avances tecnológicos y la mejor calidad en el servicio.</p>
-                                        <p>Tal fue el éxito inicial, que los mismos pacientes, que venían desde distritos lejanos, motivaron la apertura de otros consultorios. Primero en San Isidro (1986), luego en Lince (1991), más tarde en Miraflores (1997) y en San Borja (2002). Las sedes más recientes son las de La Molina, San Miguel y Av. Arequipa.</p>
-                                        <p>A la par ha continuado la tradición en Multident. La Dra. Paola Ochoa se sumó hace algunos años al equipo de más de 100 doctores, asistentas y administradores que conforman la familia Multident.</p>
+                                        </a>-->
+                                        <h2 class="h2 color-blue">Historia</h2>
+                                        <p>En el año 1965 Ymelda Tamayo de Quevedo fue una de las mujeres pioneras en la odontología peruana. Inició con una práctica privada en el distrito de Pueblo libre. Años después, Tatiana Quevedo Tamayo, hija de la Dra Imelda Tamayo, inicia también una Carrera de dentista en el perú. Logrando una gran trayectura en el medio odontológico, creando un moderno centro odontológico en el distrito de San Borja.</p>
+                                        <p>Varios años después Stephanie Caceres Quevedo, hija de Tatiana Quevedo y nieta de Ymelda Tamayo, decide continuar con la trayectoria familiar de mujeres dentistas. Integrando experiencia, especialidades y modernidad. </p>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <span class="h2">Pilares Multident</span>
-                                        <h3 class="h3">Misión</h3>
-                                        <p>Brindar atención dental de calidad y un servicio de excelencia a nuestros pacientes y a las personas cuya protección de salud nos ha sido confiada.</p>
+                                        <h2 class="h2 color-blue">Misión y Visión</h2>
+                                        <!--<h3 class="h3">Misión y Visión</h3>-->
+                                        <p>Somos una empresa dedicada a brindar servicios de atención en Ortodoncia, implantes, estética y cosmética dental.</p>
+                                        <p>Nuestra pasión es crear bellas y naturales sonrisas mediante procedimientos con aparatología de vanguardia y con técnicas utilizadas en los consultorios más reconocidos del mundo. Nuestro staff conformado por la Dra. Tatiana Quevedo Tamayo y la Dra. Stephanie Cáceres Quevedo provienen de una familia con trascendencia generacional odontológica; su dedicación, junto a la red de especialistas contribuyen a lograr un bienestar y una satisfacción personal en sus pacientes.</p>
                                         
-                                        <h3 class="h3">Visión</h3>
-                                        <p>Ser el sistema de atención dental líder en el Perú, con la más avanzada tecnología en manos de un equipo integrado por odontólogos de primer nivel, técnicos y administrativos, comprometidos con el mejoramiento continuo en busca de un país que sonría sanamente.</p>
-                                        
-                                        <h3 class="h3">Política de calidad</h3>
-                                        <p>En Multident, la clínica dental líder del país, buscamos desbordar las expectativas de nuestros pacientes, promoviendo un mejoramiento continuo, elevando el nivel profesional y manteniéndonos a la vanguardia de la tecnología.</p>
-                                        
-                                        <h3 class="h3">Valores</h3>
-                                        <p>Multident, promueve y practica la Cultura de Valores: Honestidad, Veracidad, Laboriosidad, Lealtad, y Respeto. Esta es una parte fundamental de la familia Multident.</p>
-                                    
-                                        <h3 class="h3">Responsabilidad Social</h3>
-                                        <p>Multident está comprometida con la defensa del medio ambiente y la cultura sana; protección del menor, la mujer desvalida y el adulto mayor, participa activamente a favor de campañas y programas de ayuda social a nivel nacional.</p>
                                     </div>
                                 </div>
                             </div>

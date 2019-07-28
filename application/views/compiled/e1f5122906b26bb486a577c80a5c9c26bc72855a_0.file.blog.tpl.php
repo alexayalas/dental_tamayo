@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2019-07-05 15:27:06
+<?php /* Smarty version 3.1.27, created on 2019-07-08 16:35:36
          compiled from "C:\xampp5\htdocs\Tamayo\application\views\templates\web\view\blog.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:50085d1fb29ab5f639_32370227%%*/
+/*%%SmartyHeaderCode:248605d23b7285792a5_55636681%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e1f5122906b26bb486a577c80a5c9c26bc72855a' => 
     array (
       0 => 'C:\\xampp5\\htdocs\\Tamayo\\application\\views\\templates\\web\\view\\blog.tpl',
-      1 => 1562189709,
+      1 => 1562621733,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '50085d1fb29ab5f639_32370227',
+  'nocache_hash' => '248605d23b7285792a5_55636681',
   'variables' => 
   array (
     'base_url' => 0,
@@ -27,13 +27,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5d1fb29ad04491_38201309',
+  'unifunc' => 'content_5d23b72863b0b8_94489756',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5d1fb29ad04491_38201309')) {
-function content_5d1fb29ad04491_38201309 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5d23b72863b0b8_94489756')) {
+function content_5d23b72863b0b8_94489756 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '50085d1fb29ab5f639_32370227';
+$_smarty_tpl->properties['nocache_hash'] = '248605d23b7285792a5_55636681';
 ?>
 <div class="page-top clearfix">
     <div class="container">
@@ -43,7 +43,7 @@ $_smarty_tpl->properties['nocache_hash'] = '50085d1fb29ab5f639_32370227';
                 <nav class="bread-crumb">
                     <ul class="breadcrumb clearfix">
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-">Multident</a><span class="divider"></span></li><li>Blog</li>
+">Dental Tamayo</a><span class="divider"></span></li><li>Blog</li>
                     </ul>                    
                 </nav>
             </div>
@@ -85,39 +85,31 @@ $foreach_bg_Sav = $_smarty_tpl->tpl_vars['bg'];
                                         <p class="p-blog"><span class="meta-date" title="24-11-2016 13:00:19"><i class="fa fa-calendar"></i> <?php echo $_smarty_tpl->tpl_vars['bg']->value['f_registro'];?>
 </span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span class="meta-date"><i class="fa fa-eye"></i> <?php echo $_smarty_tpl->tpl_vars['bg']->value['visitas'];?>
 </span></p>
-                                        <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/blog/<?php echo $_smarty_tpl->tpl_vars['bg']->value['url'];?>
-">
+                                        <a href="#">
                                             <img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 thumbs/732/346/publicacion_<?php echo $_smarty_tpl->tpl_vars['bg']->value['imagen'];?>
 " />                
                                         </a>
                                     </figure>
-                                    <h3 class="entry-title"><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/blog/<?php echo $_smarty_tpl->tpl_vars['bg']->value['url'];?>
-"><?php echo $_smarty_tpl->tpl_vars['bg']->value['titulo'];?>
+                                    <h3 class="entry-title"><a href="#"><?php echo $_smarty_tpl->tpl_vars['bg']->value['titulo'];?>
 </a>
                                     </h3>
                                     <div class="text-left">
-                                        <a href="http://www.facebook.com/sharer.php?u=<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/blog/<?php echo $_smarty_tpl->tpl_vars['bg']->value['url'];?>
-" onclick="gec.fn.popup(this,event)" class="share-face" style="margin-left: 0px;"><i class="fa fa-facebook fa-2x"></i>
+                                        <a href="#" class="share-face" style="margin-left: 0px;"><i class="fa fa-facebook fa-2x"></i>
                                         </a>
 
                                         <!--<a href="#" data-href="https://twitter.com/intent/tweet?original_referer=http://portal.petabytesolutions.com.pe/articulo/facebook-sufre-por-donald-trump-y-acusaciones-de-desinformacion-508&amp;&amp;&amp;text=Facebook sufre por Donald Trump y acusaciones de desinformación&amp;tw_p=tweetbutton&amp;url=http://portal.petabytesolutions.com.pe/articulo/facebook-sufre-por-donald-trump-y-acusaciones-de-desinformacion-508&amp;via=petabyteperu" onclick="gec.fn.popup(this,event)" class="share-twit"><i class="fa fa-twitter fa-2x"></i></a>-->
                                     </div>
 
                                     <span class="entry-author">
-                                        Publicado por Multident
+                                        Publicado por Dental Tamayo
                                     </span>
                                 </header>
                                 <div class="entry-content" itemprop="text">
                                     <?php echo $_smarty_tpl->tpl_vars['bg']->value['desccorta'];?>
 
                                 </div>
-                                <a class="read-more" href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/blog/<?php echo $_smarty_tpl->tpl_vars['bg']->value['url'];?>
-" rel="bookmark">Leer Más</a>    
+                                <a class="read-more" href="#" rel="bookmark">Leer Más</a>    
                             </div>
                         </article><!-- Post -->
                     <?php
@@ -162,9 +154,7 @@ $_smarty_tpl->tpl_vars['ct']->_loop = true;
 $foreach_ct_Sav = $_smarty_tpl->tpl_vars['ct'];
 ?>
                             <li class="cat-item ">
-                                <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/categoria/<?php echo $_smarty_tpl->tpl_vars['ct']->value['url'];?>
-" ><?php echo $_smarty_tpl->tpl_vars['ct']->value['nombre'];?>
+                                <a href="#" ><?php echo $_smarty_tpl->tpl_vars['ct']->value['nombre'];?>
 </a>
                             </li>
                         <?php
@@ -196,9 +186,7 @@ $foreach_mv_Sav = $_smarty_tpl->tpl_vars['mv'];
 ?>
                                     <div class="tab-post-listing clearfix">
                                         <figure>
-                                            <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/blog/<?php echo $_smarty_tpl->tpl_vars['mv']->value['url'];?>
-">
+                                            <a href="#">
                                                 <img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
 thumbs/732/346/publicacion_<?php echo $_smarty_tpl->tpl_vars['mv']->value['imagen'];?>
 " />
@@ -206,9 +194,7 @@ thumbs/732/346/publicacion_<?php echo $_smarty_tpl->tpl_vars['mv']->value['image
                                         </figure>
                                         <div class="post-content">
                                             <h6>
-                                                <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/blog/<?php echo $_smarty_tpl->tpl_vars['mv']->value['url'];?>
-"><?php echo $_smarty_tpl->tpl_vars['mv']->value['titulo'];?>
+                                                <a href="#"><?php echo $_smarty_tpl->tpl_vars['mv']->value['titulo'];?>
 </a>
                                             </h6>
                                             <span><?php echo $_smarty_tpl->tpl_vars['mv']->value['f_registro'];?>

@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2019-07-05 15:52:42
+<?php /* Smarty version 3.1.27, created on 2019-07-08 14:53:35
          compiled from "C:\xampp5\htdocs\Tamayo\application\views\templates\web\structure\inter_footer.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:46275d1fb89aeaaf39_09568058%%*/
+/*%%SmartyHeaderCode:148885d239f3fe972c3_73900406%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,151 +9,43 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ced8bbd235ce1f4f7ed3ca27d29ed4c5d1636615' => 
     array (
       0 => 'C:\\xampp5\\htdocs\\Tamayo\\application\\views\\templates\\web\\structure\\inter_footer.tpl',
-      1 => 1562359957,
+      1 => 1562615607,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '46275d1fb89aeaaf39_09568058',
+  'nocache_hash' => '148885d239f3fe972c3_73900406',
   'variables' => 
   array (
     'base_url' => 0,
-    'lista_tag' => 0,
-    'tg' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5d1fb89b012f85_94185762',
+  'unifunc' => 'content_5d239f3feb2216_76695979',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5d1fb89b012f85_94185762')) {
-function content_5d1fb89b012f85_94185762 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5d239f3feb2216_76695979')) {
+function content_5d239f3feb2216_76695979 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '46275d1fb89aeaaf39_09568058';
+$_smarty_tpl->properties['nocache_hash'] = '148885d239f3fe972c3_73900406';
 ?>
 <footer id="main-footer" class="site-footer clearfix">
     <div class="container">
         <div class="row">
 
-            <div class=" col-lg-3 col-md-3 col-sm-6  ">
-                <section id="text-2" class="widget animated fadeInLeft widget_text"><h3 class="title">Accesos Directos</h3>
-                    <div class="textwidget">
-                        <ul>
-                            <li><img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/extras/arrow-list-two-bg02.png">&nbsp;&nbsp;&nbsp;<a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/promociones/">Promociones</a></li>
-                            <li><img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/extras/arrow-list-two-bg02.png">&nbsp;&nbsp;&nbsp;<a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/servicios/emergencias/">Emergencias 24/7</a></li>
-                            <li><img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/extras/arrow-list-two-bg02.png">&nbsp;&nbsp;&nbsp;<a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/politicas-privacidad/">Politicas de Privacidad</a></li>
-                        </ul>
-                    </div>
-                </section>            
-            </div>
-
-            <div class=" col-lg-3 col-md-3 col-sm-6  ">
-                <section id="categories-4" class="widget animated fadeInLeft widget_categories">
-                    <h3 class="title">Tags más visitados</h3>    
-                    <?php if (isset($_smarty_tpl->tpl_vars['lista_tag']->value)) {?>
-                        <ul class="gropu-cust">
-                            <?php
-$_from = $_smarty_tpl->tpl_vars['lista_tag']->value;
-if (!is_array($_from) && !is_object($_from)) {
-settype($_from, 'array');
-}
-$_smarty_tpl->tpl_vars['tg'] = new Smarty_Variable;
-$_smarty_tpl->tpl_vars['tg']->_loop = false;
-foreach ($_from as $_smarty_tpl->tpl_vars['tg']->value) {
-$_smarty_tpl->tpl_vars['tg']->_loop = true;
-$foreach_tg_Sav = $_smarty_tpl->tpl_vars['tg'];
-?>
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/tag/<?php echo $_smarty_tpl->tpl_vars['tg']->value['url'];?>
-" class="btn boton-1gstag"><span class="fa fa-tag"></span> <?php echo $_smarty_tpl->tpl_vars['tg']->value['nombre'];?>
-</a></li>
-                            <?php
-$_smarty_tpl->tpl_vars['tg'] = $foreach_tg_Sav;
-}
-?>
-                        </ul>  
-                    <?php }?>
-                </section>            
-            </div>
-
-            <div class="clearfix visible-sm"></div>
-
-            <div class=" col-lg-3 col-md-3 col-sm-6  ">
-                <section id="wp_email_capture_widget_class-3" class="widget animated fadeInLeft widget_wp_email_capture_widget_class">
-                <h3 class="title">¡Suscríbete a Multident News!</h3>
-                <div class="textwidget">
-                    <p>Ofertas únicas en tu correo y noticias de gran interés </p>
-                </div> 
-                <div id="wp_email_capture" class="wp-email-capture wp-email-capture-widget wp-email-capture-widget-worldwide">
-                    <form name="wp_email_capture" method="post" action="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-formulario/suscripcion" class="form">
-                        <span class="response"></span>
-                        
-                        <label class="">Nombre:</label> 
-                        <input name="nombre" type="text" class="" title="Nombre" /><br/>
-
-                        <label class="">E-mail:</label> 
-                        <input name="email" type="text" class="" title="Email" /><br/>
-
-                        <input type="hidden" name="wp_capture_action" value="1" />
-                        
-                        <label style="font-size: 14px;">
-                            <input type="checkbox" value="1" name="terminos"> He leído, entendido y acepto los términos y condiciones de sus <a href="#" class="m-terminos"> <u>Políticas de Privacidad. </u></a>
-                        </label>
-
-                            <!-- <div class="g-recaptcha" id="Recaptcha2"></div> -->
-                        
-
-                        <button class="btn btn-social btn-primary save btn-suscribir" data-toggle="tooltip" title="Enviar">
-                        <i class="fa fa-paper-plane"></i> Enviar</button><i class="load"></i>
-
-                    </form>
-
-                </div>
-
-                </section>            
-            </div>
-
-            <div class=" col-lg-3 col-md-3 col-sm-6  ">
-                <section id="text-4" class="widget animated fadeInLeft widget_text">            
-                    <div class="textwidget">
-                        <center>
-                            <a href="http://www.facebook.com/multidentperu" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/extras/facebook.png"></a>  
-                            <a href="http://www.youtube.com/elcanaldelasonrisa" target="_blank"><img src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/extras/youtube.png"></a>
-                        </center>
-                    </div>
-                </section>
-                <section id="text-3" class="widget animated fadeInLeft widget_text">          
-                    <div class="textwidget">
-                        <center>
-                            <img width="70%" src="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-public/imagen/extras/marcaPeru.png">
-                        </center>
-                    </div>
-                </section>            
-            </div>
-
             <div class="col-lg-12 col-md-12 col-sm-12 ">
                 <div class="footer-bottom animated fadeInDown clearfix">
                     <div class="row">
                         <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
-                            <p>© 2016 Copyright - Todos los Derechos Reservados  <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
-site/">DENTAL TAMAYO</a></p>
+                            <p>© 2019 Copyright - Todos los Derechos Reservados  <a href="<?php echo $_smarty_tpl->tpl_vars['base_url']->value;?>
+site/">DESARROLLO IT</a></p>
                         </div>
                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12  clearfix">
                             <ul class="footer-social-nav">
                                 <li>
-                                    <a target="_blank" href="http://www.facebook.com/multidentperu"><i class="fa fa-facebook"></i></a>
+                                    <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="http://www.youtube.com/elcanaldelasonrisa"><i class="fa fa-youtube"></i></a>
+                                    <a target="_blank" href="#"><i class="fa fa-youtube"></i></a>
                                 </li>                                
                             </ul>
                         </div>

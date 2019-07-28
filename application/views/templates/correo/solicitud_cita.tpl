@@ -13,15 +13,15 @@
                                 <tr>
                                     <td width="640">
 
-                                        <table width="100%" bgcolor="#00B3E7" border="0" cellpadding="0" cellspacing="0">
+                                        <table width="100%" bgcolor="#337ab7" border="0" cellpadding="0" cellspacing="0">
                                             <tbody>
-                                                <tr style="text-align: right;">
+                                                <tr style="text-align: center;">
                                                     <td style="padding: 15px 5px 0px 0px;">
-                                                        <img src="http://encuestamdm.mdmanagement.org/public/img/multident-logo.png">
+                                                        <img src="http://198.199.69.176/demoweb/public/imagen/logo/logo-tamayo-blanco.png" width="150" height="60">
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td style="padding:30px" align="left"><font style="text-align:center;font-size:30px" face="&#39;HelveticaNeue-Light&#39;, &#39;Helvetica Neue Light&#39;, &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" color="#ffffff">Solicitud de cita desde la pagina web</font></td>
+                                                <tr style="text-align: center;">
+                                                    <td style="padding:10px" align="center"><font style="text-align:center;font-size:30px" face="&#39;HelveticaNeue-Light&#39;, &#39;Helvetica Neue Light&#39;, &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" color="#ffffff">Solicitud de cita desde la pagina web</font></td>
                                                 </tr>
 
                                             </tbody>
@@ -41,10 +41,8 @@
                                                         3. <b>Telefono</b> {$telefono}<br>
                                                         4. <b>Como se entero:</b> {$referencia}<br>
                                                         5. <b>Especialidad:</b> {$especialidad}<br>
-                                                        6. <b>Sede:</b> {$sede}<br>
-														7. <b>Dirección de Sede:</b> {$direccion}<br>
-                                                        8. <b>Fecha para la Cita:</b> {$fecha}<br>
-                                                        9. <b>Comentario:</b> {$comentario}<br>
+                                                        6. <b>Fecha para la Cita:</b> {$fecha}<br>
+                                                        7. <b>Comentario:</b> {$comentario}<br>
                 
                                                 </tr>
                                             </tbody>
@@ -55,7 +53,7 @@
                                                 <tr>
                                                     <td style="padding-top:5px; border-top: 1px solid #00B3E7" align="left"><font style="font-size:10px" face="&#39;HelveticaNeue-Regular&#39;, &#39;Helvetica Neue Regular&#39;, &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" color="#999999"> 
                                             
-                                                        <center> Copyright @2016 - Multident. Todos los derechos reservados. </center></font></td>
+                                                        <center> Copyright @2019 - Dental Tamayo. Todos los derechos reservados. </center></font></td>
                                                 </tr>
                                             </tbody>
                                         </table>

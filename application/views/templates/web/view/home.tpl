@@ -28,10 +28,10 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 ">
                 <div class="features-intro clearfix">
-                    <h2>Dental Tamayo <span>Su Clínica Dental de Confianza</span></h2>
+                    <h2>Nuestra Satistacción... <br/><span>Su Felicidad...</span></h2>
 
-                    <p>Más de 20 años y miles de sonrisas alrededor del Perú nos respaldan como la primera y mejor Clínica Dental del pais. ¡Compruébalo tu mismo!</p>
-                    <a class="read-more" href="{$base_url}site/cita-en-linea">¡Reserva tu Cita en Línea!</a>                
+                    <p>Clínica Dental Tamayo a cargo de la Dr. Tatiana Quevedo Tamayo, quien cuenta con más de 20 años de experiencia en Estética y Salud Dental, tiempo el cual viene mejorando la sonrisa de todos sus pacientes en el distrito de San Borja.</p>
+                    <p>Estamos comprometidos con brindarles un servicio personalizado de excelente calidad y con resultados en los tratamientos que son nuestra mejor carta de presentación.</p>
                 </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 ">
@@ -40,12 +40,13 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 single-feature">
                         <div class="row">
                             <div class="col-lg-3 col-md-3 col-sm-3 icon-wrapper">
-                                <i class="fa fa-medkit"></i>                            
+                                <i class="fa fa-tags"></i>                            
                             </div>
                             <div class="col-lg-9 col-md-9 col-sm-9">
-                                <h3>
-                                    <a class="home-a" href="{$base_url}site/servicios/especialidades/">Conoce nuestras Especialidades</a>                                </h3>
-                                <p>Cada uno de nuestros Odontólogos destaca en su especialidad, porque para nosotros es importante brindarte calidez humana junto con tecnología de punta.</p>
+                                <h3 class="color-blue">
+                                    Prevención
+                                </h3>
+                                <p>Cuida tus dientes. Cepíllate siempre y después de cada alimento. Usa hilo dental. Una sana costumbre para que tus dientes te duren toda la vida.</p>
                             </div>
                         </div>
                     </div>
@@ -53,12 +54,13 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 single-feature">
                         <div class="row">
                             <div class="col-lg-3 col-md-3 col-sm-3 icon-wrapper">
-                                <i class="fa fa-ambulance"></i>                            
+                                <i class="fa fa-tags"></i>                            
                             </div>
                             <div class="col-lg-9 col-md-9 col-sm-9">
-                                <h3>
-                                    <a class="home-a" href="{$base_url}site/servicios/emergencias/">Atención 24 Horas</a>                                </h3>
-                                <p>Llámanos al (01) 441-3000 y visítanos en Av. Arequipa 4105, Miraflores a toda hora, todos los días.</p>
+                                <h3 class="color-blue">
+                                    Detección
+                                </h3>
+                                <p>Visita al dentista por lo menos dos veces al año. Más vale una revisión profesional para evitar males posteriores.</p>
                             </div>
                         </div>
                     </div>
@@ -68,28 +70,21 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 single-feature">
                         <div class="row">
                             <div class="col-lg-3 col-md-3 col-sm-3 icon-wrapper">
-                                <i class="fa fa-building-o"></i>                            
+                                <i class="fa fa-tags"></i>                            
                             </div>
                             <div class="col-lg-9 col-md-9 col-sm-9">
-                                <h3>
-                                    <a class="home-a" href="{$base_url}site/sedes/">30+ Sedes y Contando</a>                                </h3>
-                                <p>En todo el Perú, crecemos año tras año buscando cada día estar más cerca a ti.</p>
+                                <h3 class="color-blue">
+                                    Solución
+                                </h3>
+                                <p>Cuando tengas dolor o malestar dental, visita de inmediato al dentista. La atención profesional siempre será la mejor.</p>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-6 col-md-6 col-sm-6 single-feature">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 icon-wrapper">
-                                <i class="fa fa-credit-card"></i>                            
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-9">
-                                <h3>
-                                    <a class="home-a" href="{$base_url}site/servicios/multident-card/">Multident Card</a>                                </h3>
-                                <p>Empieza a disfrutar de múltiples beneficios para ti y 6 familiares, inscríbete en todas nuestras sedes.</p>
-                            </div>
+                        <div class="features-intro clearfix">
+                            <a class="read-more col-md-12 text-center" href="{$base_url}site/cita-en-linea">¡Reserva tu Cita en Línea!</a>                
                         </div>
-                    </div>
+                    </div>                    
 
                 </div>
             </div>
